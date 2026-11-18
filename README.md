@@ -1,2 +1,30 @@
-# crypto-hype-last-drops
-Persian workshop on blockchain, DeFi and on-chain market intelligence
+# آخرین قطرات هایپ ارز دیجیتال | AFTER THE HYPE
+
+کارگاه فارسی و پروژه‌محور درباره بلاکچین، DeFi و تحلیل داده‌های آن‌چین؛ با تمرکز بر فهم زیرساخت به‌جای هیجان قیمت.
+
+**وب‌سایت:** https://shaiinarab.github.io/crypto-hype-last-drops/
+
+## انتشار
+این مخزن یک وب‌سایت کاملاً ایستا و مستقل از فریم‌ورک است. GitHub Actions با هر push به شاخه `main` فایل `index.html` را به GitHub Pages منتشر می‌کند.
+
+در صورت اولین انتشار، workflow با `actions/configure-pages` تلاش می‌کند GitHub Pages را برای مخزن فعال کند. وضعیت اجرا در زبانه Actions قابل مشاهده است.
+
+## بخش‌های سایت
+- بررسی اینکه یک مسئله واقعاً به بلاکچین نیاز دارد یا نه
+- بازکردن هش تراکنش اتریوم در Etherscan
+- شبیه‌ساز AMM با مدل ساده `x × y = k`
+- محاسبه‌گر Impermanent Loss
+- راهنمای شاخص‌های TVL، Fees، Revenue، Exchange Flows، Open Interest، MVRV و SOPR
+- مسیر آموزشی و جعبه‌ابزار منابع
+
+## اجرای محلی
+فایل `index.html` را باز کن، یا اجرا کن:
+
+```bash
+python3 -m http.server 8080
+```
+
+سپس به `http://localhost:8080` برو.
+
+## مرزبندی
+این پروژه آموزشی است، نه توصیه سرمایه‌گذاری. هیچ کیف پولی وصل نمی‌شود و شبیه‌سازها داده زنده یا سیگنال معاملاتی تولید نمی‌کنند. هر شاخص باید همراه با تعریف و محدودیت داده بررسی شود.
