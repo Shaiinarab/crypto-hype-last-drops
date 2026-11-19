@@ -6,12 +6,7 @@
 
 ## انتشار در GitHub Pages
 
-**تنظیم یک‌باره الزامی است:** GitHub Pages هنوز برای این مخزن فعال نشده است. دسترسی GitHub Actions متصل به این مخزن اجازه ایجاد اولیه Pages site را ندارد.
-
-1. وارد [Settings → Pages](https://github.com/Shaiinarab/crypto-hype-last-drops/settings/pages) شو.
-2. در بخش **Build and deployment**، گزینه **GitHub Actions** را به‌عنوان Source انتخاب و Save کن.
-3. به زبانه [Actions](https://github.com/Shaiinarab/crypto-hype-last-drops/actions/workflows/pages.yml) برو و اجرای ناموفق فعلی را باز کن.
-4. **Re-run all jobs** را بزن. پس از اولین انتشار موفق، هر push به `main` به‌صورت خودکار سایت را منتشر می‌کند.
+Workflow از `actions/configure-pages` با گزینه `enablement: true` استفاده می‌کند و تلاش می‌کند GitHub Pages را در اولین اجرا فعال کند. اگر اجرا به‌دلیل غیرفعال‌بودن Pages متوقف شد، یک‌بار وارد [Settings → Pages](https://github.com/Shaiinarab/crypto-hype-last-drops/settings/pages) شو، در بخش **Build and deployment** گزینه **GitHub Actions** را به‌عنوان Source انتخاب کن و سپس workflow را از [Actions](https://github.com/Shaiinarab/crypto-hype-last-drops/actions/workflows/pages.yml) دوباره اجرا کن. پس از انتشار موفق، هر push به `main` سایت را به‌روز می‌کند.
 
 Workflow در `.github/workflows/pages.yml` قرار دارد. فایل سایت مستقل از فریم‌ورک است و به نصب پکیج یا کلید API نیاز ندارد.
 
